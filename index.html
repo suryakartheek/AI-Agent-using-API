@@ -1,25 +1,40 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Safe Gemini Agent</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MATRIX AI Agent</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="chat-container">
-        <div id="chat-log"></div>
-        <div class="input-row">
-            <input type="text" id="user-input" placeholder="Enter command...">
-            <button id="send-btn">Send</button>
+    <div class="blob"></div>
+    <div class="blob-2"></div>
+
+    <div class="glass-card">
+        <header>
+            <div class="status-indicator">
+                <div class="dot"></div>
+                <span>Gemini 2.5 Active</span>
+            </div>
+            <h1>MATRIX AI</h1>
+        </header>
+
+        <div id="chat-log">
+            <div class="ai-msg">Hello! I'm your MATRIX Agent. How can I help you today?</div>
+        </div>
+
+        <div class="input-area">
+            <input type="text" id="user-input" placeholder="Type a message..." autocomplete="off">
+            <button id="send-btn">
+                <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg>
+            </button>
         </div>
     </div>
 
-<script type="importmap">
-  {
-    "imports": {
-      "@google/generative-ai": "https://esm.run/@google/generative-ai@0.22.0"
-    }
-  }
-</script>
+    <script type="importmap">
+      { "imports": { "@google/generative-ai": "https://esm.run/@google/generative-ai@0.21.0" } }
+    </script>
     <script type="module" src="script.js"></script>
 </body>
 </html>
