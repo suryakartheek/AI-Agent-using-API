@@ -4,7 +4,7 @@ const API_KEY = "AIzaSyB_k7EvZRKsBZndRsk4mstHr4xibFGqx_A";
 const genAI = new GoogleGenerativeAI(API_KEY);
 const model = genAI.getGenerativeModel({ 
     model: "gemini-2.5-flash",
-    systemInstruction: "You are Aura, a friendly and helpful AI agent. Use emojis occasionally." 
+    systemInstruction: "You are Matrix Agent, a friendly and helpful AI agent. Use emojis occasionally." 
 });
 
 const log = document.getElementById('chat-log');
