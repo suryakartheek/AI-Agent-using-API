@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Safe Gemini Agent</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="chat-container">
+        <div id="chat-log"></div>
+        <div class="input-row">
+            <input type="text" id="user-input" placeholder="Enter command...">
+            <button id="send-btn">Send</button>
+        </div>
+    </div>
+
+    <script type="importmap">
+      { "imports": { "@google/generative-ai": "https://esm.run/@google/generative-ai" } }
+    </script>
+    <script type="module" src="script.js"></script>
+</body>
+</html>
