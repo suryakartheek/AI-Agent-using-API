@@ -1,7 +1,7 @@
 import { GoogleGenerativeAI } from "@google/generative-ai";
 
 // Replace with your restricted key
-const API_KEY = "AIzaSyDpXKrX_2hO1llHUDr-je7oJIQIqcZk3rA"; 
+const API_KEY = "AIzaSyCCK0QLYhwqSJqjMaiJ2ejGH2PUbkc5zyw"; 
 
 const genAI = new GoogleGenerativeAI(API_KEY);
 const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
