@@ -1,7 +1,7 @@
 import { GoogleGenerativeAI } from "@google/generative-ai";
 
 // Replace with your restricted key
-const API_KEY = "AIzaSyCCK0QLYhwqSJqjMaiJ2ejGH2PUbkc5zyw"; 
+const API_KEY = "AIzaSyAJyFUUx0LN3alZmvHwL3q6_1GcO1HHR2M"; 
 
 const genAI = new GoogleGenerativeAI(API_KEY);
 
