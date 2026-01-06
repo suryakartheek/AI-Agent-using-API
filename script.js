@@ -4,7 +4,7 @@ import { GoogleGenerativeAI } from "@google/generative-ai";
 const API_KEY = "AIzaSyCCK0QLYhwqSJqjMaiJ2ejGH2PUbkc5zyw"; 
 
 const genAI = new GoogleGenerativeAI(API_KEY);
-const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
+const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash" });
 
 async function sendMessage() {
     const input = document.getElementById('user-input');
